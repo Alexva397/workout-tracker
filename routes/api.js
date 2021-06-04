@@ -27,7 +27,7 @@ router.post('/api/workouts', ({ body }, res) => {
 
 
 router.put('/api/workouts/:id', ({ body, params }, res) => {
-    Workout.findByIdAndUpdate(params._id, { $set: { exercises: body } })
+    Workout.findByIdAndUpdate(params.id, { $push: { exercises: body }}, { new: true })
     .then(workoutData => {
         console.log(workoutData);
         
