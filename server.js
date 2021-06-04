@@ -13,9 +13,11 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
+mongoose.set('useFindAndModify', false);
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/workout', {
   useNewUrlParser: true,
-  // useFindandModify:  false,
+  // useFindandModify: false,
   useUnifiedTopology: true
 });
 
