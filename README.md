@@ -13,7 +13,7 @@
 
 ## Description
 
-This app is design for the user to record and track their workouts over a 7 day period.
+This app is designed for the user to record and track their workouts over a 7 day period.
 
 The user is able to create workouts with multiple exercies.
 
